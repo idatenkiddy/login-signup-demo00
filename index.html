@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aris. - Login/SignUp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1fc4fe8588.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+    <nav class="navbar">
+      <div class="logo">Aris<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="container">
+      <div class="form-container">
+        <div class="form-switcher">
+          <button id="loginBtn" class="active">Login</button>
+          <button id="signupBtn">Sign Up</button>
+        </div>
+        <div id="loginForm" class="form">
+          <h2>Welcome Back</h2>
+          <form>
+            <div class="input-group">
+              <input type="email" id="loginEmail" required placeholder=" " />
+              <label for="loginEmail">Email</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                id="loginPassword"
+                required
+                placeholder=" "
+              />
+              <label for="loginPassword">Password</label>
+            </div>
+            <button type="submit" class="submit-btn">Log In</button>
+          </form>
+          <div class="divider">
+            <span>or</span>
+          </div>
+          <div class="social-login">
+            <button class="google-btn">
+              <i class="fab fa-google"></i>
+              Login with Google
+            </button>
+            <button class="github-btn">
+              <i class="fab fa-github"></i>
+              Login with GitHub
+            </button>
+          </div>
+        </div>
+        <div id="signupForm" class="form hidden">
+          <h2>Create Account</h2>
+          <form>
+            <div class="input-group">
+              <input type="text" id="signupName" required placeholder=" " />
+              <label for="signupName">Full Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="signupEmail" required placeholder=" " />
+              <label for="signupEmail">Email</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                id="signupPassword"
+                required
+                placeholder=" "
+              />
+              <label for="signupPassword">Password</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                id="signupConfirmPassword"
+                required
+                placeholder=" "
+              />
+              <label for="signupConfirmPassword">Confirm Password</label>
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+          </form>
+          <div class="divider">
+            <span>or</span>
+          </div>
+          <div class="social-login">
+            <button class="google-btn">
+              <i class="fab fa-google"></i>
+              Sign up with Google
+            </button>
+            <button class="github-btn">
+              <i class="fab fa-github"></i>
+              Sign up with GitHub
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About <span class="aris">Aris</span><span>.</span></h3>
+          <p>
+            Aris is a cutting-edge platform
+            designed to simplify your digital experience.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Aris. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
